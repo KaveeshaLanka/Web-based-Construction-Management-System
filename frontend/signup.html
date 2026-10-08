@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up - LankaBuild CMS</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <h1>Create your account</h1>
+      <p class="subtitle">LankaBuild Construction Management System</p>
+
+      <form id="signupForm">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" required placeholder="e.g. Nimal Perera">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="you@lankabuild.com">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" required minlength="6" placeholder="At least 6 characters">
+
+        <label for="role">Role</label>
+        <select id="role" required>
+          <option value="">-- Select your role --</option>
+          <option value="OPERATIONS_MANAGER">Operations Manager</option>
+          <option value="PROJECT_MANAGER">Project Manager</option>
+          <option value="SITE_SUPERVISOR">Site Supervisor</option>
+          <option value="FINANCE_OFFICER">Finance Officer</option>
+          <option value="PROCUREMENT_OFFICER">Procurement Officer</option>
+          <option value="CONSTRUCTION_WORKER">Construction Worker</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary full-width">Sign Up</button>
+      </form>
+
+      <div id="errorBox" class="error-box"></div>
+      <div id="successBox" class="success-box"></div>
+
+      <p class="auth-footer">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - LankaBuild CMS</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <h1>LankaBuild Construction</h1>
+      <p class="subtitle">Sign in to Project & Task Management</p>
+
+      <form id="loginForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="you@lankabuild.com">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" required placeholder="Your password">
+
+        <button type="submit" class="btn btn-primary full-width">Log In</button>
+      </form>
+
+      <div id="errorBox" class="error-box"></div>
+
+      <p class="auth-footer">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
